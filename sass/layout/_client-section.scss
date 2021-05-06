@@ -1,0 +1,47 @@
+.clients-section {
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    transition: fill $transition;
+  }
+  &__list {
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+}
+
+.clients-section__link {
+  @include flexPositon(flex, center, center);
+
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 3px;
+  color: #afb1b8;
+  transition: fill $transition, border $transition;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+  &:hover .clients-section__icon,
+  &:focus .clients-section__icon {
+    fill: $accent-color;
+  }
+}
+.clients-section__item {
+  width: calc((100% - 30px * 2) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 3) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 6) / 6);
+  }
+}
+
+

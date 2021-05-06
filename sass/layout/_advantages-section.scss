@@ -1,0 +1,63 @@
+.advantages-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.advantages-list {
+  @media screen and (min-width: 480px) {
+    margin: -15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+  &__item::before {
+    content: '';
+    display: flex;
+    max-width: 450px;
+    height: 120px;
+    background-color: $buttons-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+}
+.advantages-list__item {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px * 1) / 1);
+    margin: 15px;
+  }
+  @media screen and (min-width: 768px){
+    width: calc((100% - 30px * 2) / 2);    
+  }
+}
+.advantages-list__title {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.advantages-list__text {
+  color: $main-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@each $icon in antenna, clock, diagram, astronaut {
+  .#{$icon}-icon::before {
+    background-image: url('../images/svg/#{$icon}.svg');
+  }
+}
