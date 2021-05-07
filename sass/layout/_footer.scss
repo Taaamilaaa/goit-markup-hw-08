@@ -4,7 +4,11 @@
   padding-bottom: 60px;
 }
 .logo--footer-position {
-  @media screen and (min-width: 480px) and (max-width:1199.98px) {
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 481px) and (max-width:1199.98px) {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -16,7 +20,11 @@
 .location__list {
   font-size: 14px;
   line-height: 1.71;
-  @media screen and (min-width: 480px) and (max-width:1199.98px) {
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 481px) and (max-width:1199.98px) {
     text-align: center;
     margin-bottom: 60px;
   }
@@ -25,7 +33,10 @@
   }
 }
 .footer-section__column {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
+    text-align: center;
+     }
+  @media screen and (min-width: 481px) {
   text-align: center;
    }
  }
@@ -47,7 +58,10 @@
   
  
 .footer-section__column--mobile-position {
-  @media screen and  (min-width: 480px) and (max-width:1199.98px) {
+  @media screen and  (max-width: 480px) {
+    margin-bottom: 60px;
+  }
+  @media screen and  (min-width: 481px) and (max-width:1199.98px) {
     margin-bottom: 60px;
   }
  }
@@ -65,7 +79,10 @@
   }
   
 .location__item:not(:last-child) {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 481px) {
     margin-bottom: 8px;
   }
 }
@@ -99,7 +116,11 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $complementary-color;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+  @media screen and (min-width: 481px) {
     text-align: center;
     margin-bottom: 20px;
     }
@@ -128,7 +149,13 @@
   &:focus {
     border: 1px solid $accent-color;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 481px) {
     width: 450px;
     margin-bottom: 20px;
   }
@@ -157,5 +184,8 @@
 .footer-section__icon {
   margin-left: 10px;
   fill: currentColor;
+}
+.social-list__icon--white {
+  fill: $complementary-color;
 }
 

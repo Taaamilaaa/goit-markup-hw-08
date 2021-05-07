@@ -70,6 +70,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+ 
   &:checked + &__icon {
     border-color: transparent;
     background-color: $accent-color;
@@ -92,11 +93,15 @@
 .agree__text {
   display: inline-block;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $main-text-color;
   cursor: pointer;
+  @media screen and (min-width: 1200px){
+  font-size: 14px;
+  line-height: 1.71;
+  }
 }
 .agree__link {
   color: $accent-color;

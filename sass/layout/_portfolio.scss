@@ -1,6 +1,11 @@
 .filtr-section__list {
   display: flex; 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+@media screen and (min-width: 481px) {
   flex-wrap: wrap;
   justify-content: start;
   margin-bottom: 40px;

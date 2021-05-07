@@ -20,7 +20,7 @@
         <nav class="site-navigation__content">     
                  <ul class="navigation-list list">
                      <li class="navigation-list__item">
-                         <a class="link navigation-list__link navigation-list__link--active " href="">Студия</a>
+                         <a class="link navigation-list__link navigation-list__link--active" href="">Студия</a>
                      </li>
                      <li class="navigation-list__item">
                          <a class="link navigation-list__link" href="./portfolio.html">Портфолио</a>
@@ -132,9 +132,27 @@
                 <div class="conteiner">
                     <h2 class="title">Чем мы занимаемся</h2>
                     <ul class="work-section__list list">
-                        <li class="work-section__item"><img src="./images/img.jpg" alt="Процесс написания кода" width="370"><div class="work-section__overlay">Десктопные приложения</div></li>
-                        <li class="work-section__item"><img src="./images/img1.jpg" alt="Работа с интерфейсом" width="370"><div class="work-section__overlay">Мобильные приложения</div></li>
-                        <li class="work-section__item"><img src="./images/img2.jpg" alt="Цветовая палитра" width="370"><div class="work-section__overlay">Дизайнерские решения</div></li>
+                        <li class="work-section__item">
+                            <picture>
+                                <source srcset="./images/img-desktop/img-desktop_1x.jpg 1x, ./images/img-desktop/img-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                                <img src="./images/img.jpg" alt="Процесс написания кода" width="370"> 
+                            </picture>
+                            <div class="work-section__overlay">Десктопные приложения</div>
+                        </li>
+                        <li class="work-section__item">
+                            <picture>
+                                <source srcset="./images/img-desktop/img1-desktop_1x.jpg 1x, ./images/img-desktop/img1-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                                <img src="./images/img1.jpg" alt="Работа с интерфейсом" width="370">
+                            </picture>
+                            <div class="work-section__overlay">Мобильные приложения</div>
+                        </li>
+                        <li class="work-section__item">
+                            <picture>
+                                <source srcset="./images/img-desktop/img2-desktop_1x.jpg 1x, ./images/img-desktop/img2-desktop_2x.jpg 2x"  media="(min-width: 1200px)">
+                                <img src="./images/img2.jpg" alt="Цветовая палитра" width="370">
+                            </picture>
+                            <div class="work-section__overlay">Дизайнерские решения</div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -143,7 +161,13 @@
                     <h2 class="title">Наша команда</h2>
                     <ul class="team-section__list list">
                         <li class="employee">
-                            <img class="employee__img" src="./images/img3.jpg" alt="Игорь Демьяненко" width="270">
+                            <picture>
+                                <source srcset="./images/img-desktop/img3-desktop_1x.jpg 1x, ./images/img-desktop/img3-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/img-tablet/img-tablet_1x.jpg 1x, ./images/img-tablet/img-tablet_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/img-mobile/img-mobile_1x.jpg 1x, ./images/img-mobile/img-mobile_2x.jpg 2x" media="(max-width: 767px)">
+                                <img class="employee__img" src="./images/img3.jpg" alt="Игорь Демьяненко" width="450">
+                            </picture>
+                            
                             <div class="employee__content">
                                 <h3 class="employee__name">Игорь Демьяненко</h3>
                                 <p class="employee__position" lang="en">Product Designer</p>
@@ -180,7 +204,13 @@
                             </ul>
                         </li>
                         <li class="employee">
-                            <img class="employee__img" src="./images/img4.jpg" alt="Ольга Репина" width="270">
+                            <picture>
+                                <source srcset="./images/img-desktop/img4-desktop_1x.jpg 1x, ./images/img-desktop/img4-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/img-tablet/img1-tablet_1x.jpg 1x, ./images/img-tablet/img1-tablet_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/img-mobile/img1-mobile_1x.jpg 1x, ./images/img-mobile/img1-mobile_2x.jpg 2x" media="(max-width: 767px)">
+                                <img class="employee__img" src="./images/img4.jpg" alt="Ольга Репина" width="450">
+                            </picture>
+                            
                             <div class="employee__content">
                                 <h3 class="employee__name">Ольга Репина</h3>
                                 <p class="employee__position" lang="en">Frontend Developer</p>
@@ -217,7 +247,13 @@
                             </ul>
                         </li>
                         <li class="employee">
-                            <img class="employee__img" src="./images/img5.jpg" alt="Николай Тарасов" width="270">
+                            <picture>
+                                <source srcset="./images/img-desktop/img5-desktop_1x.jpg 1x, ./images/img-desktop/img5-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/img-tablet/img2-tablet_1x.jpg 1x, ./images/img-tablet/img2-tablet_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/img-mobile/img2-mobile_1x.jpg 1x, ./images/img-mobile/img2-mobile_2x.jpg 2x" media="(max-width: 767px)">
+                                <img class="employee__img" src="./images/img5.jpg" alt="Николай Тарасов" width="450">
+                            </picture>
+                            
                             <div class="employee__content">
                                 <h3 class="employee__name">Николай Тарасов</h3>
                                 <p class="employee__position" lang="en">Marketing</p>
@@ -254,7 +290,13 @@
                             </ul>
                         </li>
                         <li class="employee">
-                            <img class="employee__img" src="./images/img6.jpg" alt="Михаил Ермаков" width="270">
+                            <picture>
+                                <source srcset="./images/img-desktop/img6-desktop_1x.jpg 1x, ./images/img-desktop/img6-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/img-tablet/img3-tablet_1x.jpg 1x, ./images/img-tablet/img3-tablet_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/img-mobile/img3-mobile_1x.jpg 1x, ./images/img-mobile/img3-mobile_2x.jpg 2x" media="(max-width: 767px)">
+                                <img class="employee__img" src="./images/img6.jpg" alt="Михаил Ермаков" width="450">
+                            </picture>
+                            
                             <div class="employee__content">
                                 <h3 class="employee__name">Михаил Ермаков</h3>
                                 <p class="employee__position" lang="en">UI Designer</p>

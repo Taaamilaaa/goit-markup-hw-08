@@ -6,7 +6,12 @@
     transition: fill $transition;
   }
   &__list {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 481px) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
