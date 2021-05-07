@@ -5,7 +5,7 @@
     justify-content: start;
     margin-bottom: 40px;
   }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 479.98px) {
   flex-wrap: wrap;
   justify-content: start;
   margin-bottom: 40px;
@@ -22,7 +22,7 @@
    margin-right: 8px; 
 }
 
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 767.98px) {
    .filtr-section__item {    
     margin-bottom: 15px;
   }
@@ -77,21 +77,19 @@
     width: calc((100% - 30px * 3) / 3);     
   }
 }
-
-
-
 .card {
- 
+  flex-grow: 1;
   transition: box-shaddow $transition;
   
   &__content {
-    flex-grow: 1;
+  
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
   }
   &__title {
+    
     margin: 0;
     margin-bottom: 4px;
 
@@ -111,6 +109,7 @@
   }
 }
 .card__text {
+ 
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -132,11 +131,8 @@
   background-color: rgba(33, 150, 243, 0.9);
   transition: box-shadow $transition, transform $transition;
 }
-.page-filter__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: stretch;
+.page-filter__link { 
+ 
   &:hover .card,
   &:focus .card {
     box-shadow: $fltr-btn-box-shadow;
