@@ -1,42 +1,38 @@
 .addres-list {
-
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 250px;
   }
 }
-  
-  
-  .addres-list__link {
-    color: $main-text-color;
-    font-weight: 500;    
-    line-height: 1.14;
-    transition: color $transition;
-    @media screen and (min-width:480px){
-      font-size: 24px;
-    }
-    @media screen and (min-width:768px){
-      font-size: 12px;
-      line-height: 1.16;
-      letter-spacing: 0.02em;
-    }
-    @media screen and (min-width:1200px){
-      font-size: 14px;    
-    }
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
-  
-    .addres-list__link:nth-child(1) {
-      @media screen and (min-width:1200px){
-      margin-left: 30px;
-    }
-  }
-  
 
-  
+.addres-list__link {
+  color: $main-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  transition: color $transition;
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.addres-list__link:nth-child(1) {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
 .envelope-icon {
   width: 16px;
   height: 12px;
@@ -44,7 +40,7 @@
   fill: $main-text-color;
 
   transition: fill $transition;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 14px;
     height: 10px;
     margin-right: 8px;
@@ -57,7 +53,7 @@
   fill: $main-text-color;
 
   transition: fill $transition;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 10px;
     height: 14px;
     margin-right: 8px;
