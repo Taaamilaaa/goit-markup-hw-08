@@ -44,6 +44,7 @@
   }
 }
 .mobile-menu {
+  display: none;
   position: fixed;
   top: 0;
   left: -100%;
@@ -52,6 +53,7 @@
   background-color: $complementary-color;
   padding: 48px 40px;
   &.is-open {
+    display: block;
     left: 0;
     z-index: 1111;
     overflow-y: scroll;

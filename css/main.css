@@ -444,6 +444,7 @@ img {
 }
 
 .mobile-menu {
+  display: none;
   position: fixed;
   top: 0;
   left: -100%;
@@ -454,6 +455,7 @@ img {
 }
 
 .mobile-menu.is-open {
+  display: block;
   left: 0;
   z-index: 1111;
   overflow-y: scroll;
@@ -839,7 +841,6 @@ img {
   .hero-section__title {
     font-size: 26px;
     line-height: 1.62;
-    width: 360px;
   }
 }
 
