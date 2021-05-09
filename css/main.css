@@ -70,6 +70,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .title {
   color: #212121;
   font-weight: 700;
@@ -871,29 +878,10 @@ img {
   background-color: #188ce8;
 }
 
-.advantages-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.advantages-list {
+  margin: -15px;
   display: flex;
-}
-
-@media screen and (max-width: 480px) {
-  .advantages-list {
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .advantages-list {
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1200px) {
